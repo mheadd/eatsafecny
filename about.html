@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About Eat Safe CNY" />
+    <title>About — Eat Safe CNY</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <nav id="main-nav" aria-label="Main navigation"></nav>
+    <main id="app">
+      <div class="about-page">
+        <h1>About Eat Safe CNY</h1>
+        <p>
+          Eat Safe CNY is a public-facing web application that allows users to
+          search and browse restaurant health inspection results for Onondaga
+          County in Central New York. The application consumes open data
+          published by the NYS Department of Health and presents it in a
+          user-friendly, mobile-optimized interface.
+        </p>
+        <h2>Data Source</h2>
+        <p>
+          All inspection data is sourced from the
+          <a
+            href="https://health.data.ny.gov/Health/Onondaga-County-Restaurant-Inspections/tbxv-5tbd"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Onondaga County Restaurant Inspections</a
+          >
+          dataset on the NYS Health Data portal, accessed via the Socrata Open
+          Data API (SODA).
+        </p>
+        <h2>Disclaimer</h2>
+        <p>
+          This site is <strong>not affiliated with</strong> the New York State
+          Department of Health or the Onondaga County Health Department. The data
+          displayed is provided as-is from the public dataset. For official
+          information, please visit the
+          <a
+            href="https://health.data.ny.gov"
+            target="_blank"
+            rel="noopener noreferrer"
+            >NYS Health Data</a
+          >
+          portal.
+        </p>
+      </div>
+    </main>
+    <script type="module">
+      import { renderNav } from "/src/components/nav.ts";
+      renderNav();
+    </script>
+  </body>
+</html>

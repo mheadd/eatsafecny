@@ -1,0 +1,15 @@
+{
+  "name": "eatsafecny",
+  "version": "1.0.0",
+  "description": "Search and browse restaurant health inspection results for Onondaga County, NY",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "vite": "^6.0.0"
+  }
+}
